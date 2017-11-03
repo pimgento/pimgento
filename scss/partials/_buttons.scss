@@ -1,0 +1,33 @@
+.buttons {
+    .btn {
+        border-radius: $button-border-radius;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all $transition-duration $transition-timing-function;
+        font-size: 16px;
+        font-family: $primary-font_bold;
+
+        &.primary {
+            background: $c-white;
+            color: $c-black;
+            border: 2px solid $c-white;
+
+            &:hover {
+                background: rgba(255,255,255,0.2);
+            }
+        }
+
+        &.secondary {
+            background: transparent;
+            color: $c-white;
+            border: 2px solid $c-white;
+            opacity: 0.2;
+
+            &:hover {
+                opacity: 1;
+                background: $c-white;
+                color: $c-black;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import 'reset';
+
+
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'partials/fonts';
+@import 'partials/vars';
+@import 'partials/buttons';
+
+@import 'partials/main';
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/home';

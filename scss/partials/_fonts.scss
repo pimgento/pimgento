@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('../common/fonts/Overpass-Regular.eot');
+    src: url('../common/fonts/Overpass-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../common/fonts/Overpass-Regular.woff2') format('woff2'),
+    url('../common/fonts/Overpass-Regular.woff') format('woff'),
+    url('../common/fonts/Overpass-Regular.ttf') format('truetype'),
+    url('../common/fonts/Overpass-Regular.svg#Overpass-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Extra Bold';
+    src: url('../common/fonts/Overpass-ExtraBold.eot');
+    src: url('../common/fonts/Overpass-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../common/fonts/Overpass-ExtraBold.woff2') format('woff2'),
+    url('../common/fonts/Overpass-ExtraBold.woff') format('woff'),
+    url('../common/fonts/Overpass-ExtraBold.ttf') format('truetype'),
+    url('../common/fonts/Overpass-ExtraBold.svg#Overpass-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Bold';
+    src: url('../common/fonts/Overpass-Bold.eot');
+    src: url('../common/fonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../common/fonts/Overpass-Bold.woff2') format('woff2'),
+    url('../common/fonts/Overpass-Bold.woff') format('woff'),
+    url('../common/fonts/Overpass-Bold.ttf') format('truetype'),
+    url('../common/fonts/Overpass-Bold.svg#Overpass-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}

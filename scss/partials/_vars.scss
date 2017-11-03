@@ -1,0 +1,17 @@
+$button-box-shadow: 0 2px 40px 0 #3CE3BA;
+$button-border-radius: 3px;
+
+$c-white: #FFFFFF;
+$c-black: #000000;
+$c-grey: #F5F6F7;
+
+$primary-font-name: 'Overpass';
+$primary-font_bold-name: 'Overpass Bold';
+$primary-font_extra_bold-name: 'Overpass Extra Bold';
+
+$primary-font: $primary-font-name, Arial, sans-serif;
+$primary-font_bold: $primary-font_bold-name, Arial, sans-serif;
+$primary-font_extra_bold: $primary-font_extra_bold-name, Arial, sans-serif;
+
+$transition-duration: 0.2s;
+$transition-timing-function: ease-in-out;

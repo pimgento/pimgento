@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
+    font-family: $primary-font;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+body {
+    background: #FFF url("../common/img/bg.png") no-repeat;
+    background-position: top right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+    section {
+        padding: 50px 0;
+        position: relative;
+
+        .row {
+            [class*="col"] {
+                margin: auto;
+            }
+        }
+    }
+}

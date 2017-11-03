@@ -1,0 +1,79 @@
+.main-container {
+    .home {
+        section {
+            &:first-child {
+                color: $c-white;
+
+                h2 {
+                    margin: 0 0 20px;
+                    font-size: 30px;
+                    text-align: left;
+                }
+
+                p {
+                    margin: 0 0 40px;
+                }
+
+                .buttons {
+                    font-size: 0;
+                    margin: 0 -10px;
+
+                    .btn {
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background: $c-grey;
+                padding-top: 0;
+                margin: 40px 0 0;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: -65px;
+                    left: 0;
+                    height: 145px;
+                    margin: auto;
+                    background: $c-grey;
+                    -ms-transform: rotate(3deg) skewX(3deg) skewY(-8deg);
+                    -webkit-transform: rotate(3deg) skewX(3deg) skewY(-8deg);
+                    transform: rotate(3deg) skewX(3deg) skewY(-8deg);
+                    z-index: 0;
+                }
+            }
+
+            &:nth-child(4) {
+                background: $c-grey;
+                padding-bottom: 0;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: -65px;
+                    left: 0;
+                    height: 145px;
+                    margin: auto;
+                    background: $c-white;
+                    -ms-transform: rotate(3deg) skewX(3deg) skewY(1deg);
+                    -webkit-transform: rotate(3deg) skewX(3deg) skewY(1deg);
+                    transform: rotate(3deg) skewX(3deg) skewY(1deg);
+                    z-index: 0;
+                }
+            }
+
+            &:nth-child(5) {
+                background: $c-white;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

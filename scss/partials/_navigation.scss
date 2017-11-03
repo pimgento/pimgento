@@ -1,0 +1,27 @@
+#global-nav {
+    .main-nav {
+        display: inline-block;
+        float: right;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 10px;
+
+            .nav-link {
+                font-size: 18px;
+                color: $c-white;
+                opacity: 0.5;
+                cursor: pointer;
+                padding: 0;
+                line-height: normal;
+
+                &.active,
+                &:hover {
+                    opacity: 1;
+                    transition: all $transition-duration $transition-timing-function;
+                }
+            }
+        }
+    }
+}

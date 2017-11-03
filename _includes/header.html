@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}css/style.css" />
+
+    <!-- WebUI popover css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+
+    <script>
+        var baseUrl = "{{ site.baseurl }}";
+    </script>
+
+</head>
+<body>
+
+<header class="site-header">
+
+    <nav id="global-nav">
+
+        <div class="container-fluid">
+
+            <h1><a class="logo" href="">PIMGento</a></h1>
+
+            {% include version-switcher.html %}
+
+            {% include navigation.html %}
+
+        </div>
+
+    </nav><!-- #global-nav -->
+
+</header>
+
+<div id="gl-wrapper">
+
+    <!-- .main-container -->
+    <div class="main-container">
+        <a id="main-content"></a>

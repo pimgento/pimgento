@@ -1,0 +1,33 @@
+.site-header {
+    border-top: 0;
+    min-height: 75px;
+    line-height: 75px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+
+    h1 {
+        float: left;
+        margin: 0;
+        line-height: 75px;
+        font-family: $primary-font;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        a {
+            color: $c-white;
+        }
+    }
+
+    .version-switcher {
+        float: left;
+
+        #version-switcher-button {
+            -webkit-appearance: none;
+        }
+
+        ul {
+            li {
+                line-height: normal;
+            }
+        }
+    }
+}
