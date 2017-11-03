@@ -31,10 +31,10 @@ version: "2.0"
 versions:
    -
       name: "1.0"
-      url: docs/v1.0/
+      url: /docs/v1.0/
    -
       name: "2.0"
-      url: docs/v2.0/
+      url: /docs/v2.0/
 
 
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]
