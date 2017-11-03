@@ -8,13 +8,26 @@
         float: left;
         margin: 0;
         line-height: 75px;
-        font-family: $primary-font;
         font-size: 20px;
         text-transform: uppercase;
 
         a {
             color: $c-white;
+            font-family: $primary-font_extra_bold;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
+    }
+
+    .for {
+        display: inline-block;
+        float: left;
+        font-family: $primary-font_italic;
+        font-size: 14px;
+        color: $c-white;
+        margin: 0 10px;
     }
 
     .version-switcher {
@@ -22,6 +35,42 @@
 
         #version-switcher-button {
             -webkit-appearance: none;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: $c-white;
+            position: relative;
+            padding-right: 30px;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                width: 7px;
+                height: 1px;
+                background: $c-white;
+                position: absolute;
+                right: 10px;
+                border: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            &:before {
+                -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                -ms-transform: rotate(45deg); /* IE 9 */
+                transform: rotate(45deg);
+                right: 15px;
+            }
+
+            &:after {
+                -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                -ms-transform: rotate(-45deg); /* IE 9 */
+                transform: rotate(-45deg);
+            }
         }
 
         ul {

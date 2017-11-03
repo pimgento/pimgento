@@ -8486,7 +8486,6 @@ a.text-dark:focus, a.text-dark:hover {
   font-family: 'Overpass Extra Bold';
   src: url("../common/fonts/Overpass-ExtraBold.eot");
   src: url("../common/fonts/Overpass-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../common/fonts/Overpass-ExtraBold.woff2") format("woff2"), url("../common/fonts/Overpass-ExtraBold.woff") format("woff"), url("../common/fonts/Overpass-ExtraBold.ttf") format("truetype"), url("../common/fonts/Overpass-ExtraBold.svg#Overpass-ExtraBold") format("svg");
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -8494,7 +8493,13 @@ a.text-dark:focus, a.text-dark:hover {
   font-family: 'Overpass Bold';
   src: url("../common/fonts/Overpass-Bold.eot");
   src: url("../common/fonts/Overpass-Bold.eot?#iefix") format("embedded-opentype"), url("../common/fonts/Overpass-Bold.woff2") format("woff2"), url("../common/fonts/Overpass-Bold.woff") format("woff"), url("../common/fonts/Overpass-Bold.ttf") format("truetype"), url("../common/fonts/Overpass-Bold.svg#Overpass-ExtraBold") format("svg");
-  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overpass Italic';
+  src: url("../common/fonts/Overpass-Italic.eot");
+  src: url("../common/fonts/Overpass-Italic.eot?#iefix") format("embedded-opentype"), url("../common/fonts/Overpass-Italic.woff2") format("woff2"), url("../common/fonts/Overpass-Italic.woff") format("woff"), url("../common/fonts/Overpass-Italic.ttf") format("truetype"), url("../common/fonts/Overpass-Italic.svg#Overpass-ExtraBold") format("svg");
   font-style: normal;
 }
 
@@ -8571,13 +8576,26 @@ body {
   float: left;
   margin: 0;
   line-height: 75px;
-  font-family: "Overpass", Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .site-header h1 a {
   color: #FFFFFF;
+  font-family: "Overpass Extra Bold", Arial, sans-serif;
+}
+
+.site-header h1 a:hover {
+  text-decoration: none;
+}
+
+.site-header .for {
+  display: inline-block;
+  float: left;
+  font-family: "Overpass Italic", Arial, sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0 10px;
 }
 
 .site-header .version-switcher {
@@ -8586,6 +8604,43 @@ body {
 
 .site-header .version-switcher #version-switcher-button {
   -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+  position: relative;
+  padding-right: 30px;
+}
+
+.site-header .version-switcher #version-switcher-button:focus {
+  box-shadow: none;
+}
+
+.site-header .version-switcher #version-switcher-button:before, .site-header .version-switcher #version-switcher-button:after {
+  content: '';
+  width: 7px;
+  height: 1px;
+  background: #FFFFFF;
+  position: absolute;
+  right: 10px;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.site-header .version-switcher #version-switcher-button:before {
+  -webkit-transform: rotate(45deg);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  /* IE 9 */
+  transform: rotate(45deg);
+  right: 15px;
+}
+
+.site-header .version-switcher #version-switcher-button:after {
+  -webkit-transform: rotate(-45deg);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  /* IE 9 */
+  transform: rotate(-45deg);
 }
 
 .site-header .version-switcher ul li {
