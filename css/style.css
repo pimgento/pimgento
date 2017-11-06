@@ -8510,6 +8510,11 @@ a.text-dark:focus, a.text-dark:hover {
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   font-family: "Overpass Bold", Arial, sans-serif;
+  padding: 10px 20px;
+}
+
+.buttons .btn:focus {
+  box-shadow: none;
 }
 
 .buttons .btn.primary {

@@ -6,6 +6,11 @@
         transition: all $transition-duration $transition-timing-function;
         font-size: 16px;
         font-family: $primary-font_bold;
+        padding: 10px 20px;
+
+        &:focus {
+            box-shadow: none;
+        }
 
         &.primary {
             background: $c-white;
