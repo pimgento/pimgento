@@ -2,3 +2,68 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon\r\r
+Thumbs.db
+
+# Development files #
+#####################
+.svn/
+.idea/
+*.iml
+*.ipr
+*.iws
+.modgit/
+.modman/
+/target/
+/work/
+.settings/
+.classpath
+.project
+.metadata
+.loadpath
+/nbproject/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/nb-configuration.xml
+/.gitmodules
+/node_modules
+
