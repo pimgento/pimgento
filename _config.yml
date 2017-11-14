@@ -13,6 +13,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+  - page-baseurl-generator
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -26,8 +28,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Version Switcher. Version numbers should be STRING
-version: "2.0"
 versions:
    -
       name: "1.0"
@@ -36,5 +36,9 @@ versions:
       name: "2.0"
       url: /docs/v2.0/
 
+defaults:
+  -
+    values:
+      doc_version: "2.0"
 
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]

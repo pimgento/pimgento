@@ -8570,6 +8570,10 @@ body {
   margin: auto;
 }
 
+.bg-white {
+  background: #FFFFFF;
+}
+
 .site-header {
   border-top: 0;
   min-height: 75px;
