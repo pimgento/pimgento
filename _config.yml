@@ -36,9 +36,11 @@ versions:
       name: "2.0"
       url: /docs/v2.0/
 
+doc_url: /docs/
+
 defaults:
   -
     values:
-      doc_version: "2.0"
+      version: "v2.0"
 
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]

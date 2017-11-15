@@ -2,4 +2,12 @@
 
 {{ content }}
 
+{% include footer-scripts.html %}
+
+<script>
+    $(document).ready(function() {
+        $('body').addClass('layout-home');
+    });
+</script>
+
 {% include footer.html %}

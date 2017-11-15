@@ -12,11 +12,10 @@
 
     <!-- WebUI popover css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
-
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <script>
         var baseUrl = "{{ site.baseurl }}";
     </script>
-
 </head>
 <body>
 
@@ -26,7 +25,15 @@
 
         <div class="container-fluid">
 
-            <h1><a class="logo" href="">PIMGento</a></h1>
+            {% if page.layout == 'home' %}
+
+            <h1><a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}">PIMGento</a></h1>
+
+            {% else %}
+
+            <a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}">PIMGento</a>
+
+            {% endif %}
 
             <span class="for">For</span>
 

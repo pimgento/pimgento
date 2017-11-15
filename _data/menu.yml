@@ -1,0 +1,50 @@
+- title: "I. Important stuff"
+  items:
+   - title: "How to..."
+     href: 'important-stuff/how_to'
+   - title: "Compatibility"
+     href: 'important-stuff/compatibility'
+   - title: "Recurring questions"
+     href: 'important-stuff/recurring_questions'
+   - title: "Roadmap"
+     href: 'important-stuff/roadmap'
+
+- title: "II. Functionnalities"
+  items:
+   - title: "PIMGento import"
+     href: 'functionnalities/pimgento_import'
+   - title: "PIMGento interface"
+     href: 'functionnalities/pimgento_interface'
+   - title: "PIMGento CLI"
+     href: 'functionnalities/pimgento_cli'
+   - title: "PIMGento CRON"
+     href: 'functionnalities/pimgento_cron'
+
+- title: "III. Configuration"
+  items:
+   - title: "General"
+     href: 'configuration/general'
+   - title: "Categories"
+     href: 'configuration/categories'
+   - title: "Families"
+     href: 'configuration/families'
+   - title: "Attributes"
+     href: 'configuration/attributes'
+   - title: "Options"
+     href: 'configuration/options'
+   - title: "Variants"
+     href: 'configuration/variants'
+   - title: "Assets"
+     href: 'configuration/assets_variation'
+   - title: "Products"
+     href: 'configuration/products'
+   - title: "Images"
+     href: 'configuration/images'
+   - title: "Stock"
+     href: 'configuration/stock'
+   - title: "Related"
+     href: 'configuration/related'
+   - title: "Products position"
+     href: 'configuration/products_position'
+   - title: "Indexer"
+     href: 'configuration/indexer'
