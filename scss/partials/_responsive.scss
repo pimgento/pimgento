@@ -100,6 +100,20 @@
     }
 }
 
+@include breakpoint($screen__m) {
+    .main-container {
+        .home {
+            section {
+                .row {
+                    [class*="col"] {
+                        margin: 0 auto 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include breakpoint($screen__s) {
     .site-header {
         .logo {
@@ -136,6 +150,21 @@
 
                     [class*="col"] {
                         padding: 30px 15px;
+                    }
+                }
+
+                &:nth-child(5) {
+                    text-align: center;
+
+                    .buttons {
+                        .btn {
+                            float: none;
+                            display: block;
+                            text-align: center;
+                            &:first-child {
+                                margin: 0 0 20px;
+                            }
+                        }
                     }
                 }
             }

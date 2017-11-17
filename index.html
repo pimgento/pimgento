@@ -103,12 +103,12 @@ page_name: home
                     <div id="import-type">
                         <p class="subtitle">Select import type</p>
                         <ul>
-                            <li class="type"><span>Categories</span></li>
-                            <li class="type active"><span>Product Categories</span></li>
-                            <li class="type"><span>Attributes</span></li>
-                            <li class="type"><span>Options</span></li>
-                            <li class="type"><span>Variants</span></li>
-                            <li class="type"><span>Products</span></li>
+                            <li class="type"><span>Categories</span><span class="icon-type"></span></li>
+                            <li class="type active"><span>Product Categories</span><span class="icon-type"></span></li>
+                            <li class="type"><span>Attributes</span><span class="icon-type"></span></li>
+                            <li class="type"><span>Options</span><span class="icon-type"></span></li>
+                            <li class="type"><span>Variants</span><span class="icon-type"></span></li>
+                            <li class="type"><span>Products</span><span class="icon-type"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -119,19 +119,19 @@ page_name: home
                     <div id="file-to-import">
                         <p class="subtitle">Select file to import</p>
                         <ul>
-                            <li class="type"><span>Categories.csv</span></li>
-                            <li class="type active"><span>Product-categories.csv</span></li>
-                            <li class="type"><span>Attributes.csv</span></li>
-                            <li class="type"><span>Options.csv</span></li>
-                            <li class="type"><span>Variants.csv</span></li>
-                            <li class="type"><span>Products.csv</span></li>
+                            <li class="type"><span class="icon-file"></span><span>Categories.csv</span></li>
+                            <li class="type active"><span class="icon-file"></span><span>Product-categories.csv</span></li>
+                            <li class="type"><span class="icon-file"></span><span>Attributes.csv</span></li>
+                            <li class="type"><span class="icon-file"></span><span>Options.csv</span></li>
+                            <li class="type"><span class="icon-file"></span><span>Variants.csv</span></li>
+                            <li class="type"><span class="icon-file"></span><span>Products.csv</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="buttons">
                         <a href="" class="btn tertiary">
-                            <span>Import</span>
+                            <span class="icon-arrow-up"></span><span>Import</span>
                         </a>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ page_name: home
                     <h2 class="title">Our clients</h2>
                 </div>
             </div>
-            <div class="our-clients-block">
+            <div class="our-clients-block" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="https://www.lancaster.com" target="_blank">
@@ -174,11 +174,11 @@ page_name: home
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
                     <h4>Any difficulties ?</h4>
                     <p>Look at the recurring questions, or open an issue.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal">
                     <div class="buttons">
                         <a class="btn tertiary" href="" target="_blank">
                             <span>Open new issue</span>

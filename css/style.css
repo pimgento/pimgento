@@ -8529,6 +8529,18 @@ a.text-dark:focus, a.text-dark:hover {
   font-size: 25px;
 }
 
+.icon-arrow-up:before {
+  content: "\e901";
+}
+
+.icon-file:before {
+  content: "\e902";
+}
+
+.icon-type:before {
+  content: "\e903";
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8977,6 +8989,15 @@ pre code {
           flex-direction: column;
 }
 
+.main-container .home section:nth-child(3) .buttons {
+  margin: 30px 0 0;
+  text-align: center;
+}
+
+.main-container .home section:nth-child(3) .buttons [class*="icon"] {
+  margin: 0 10px 0 0;
+}
+
 .main-container .home section #import-type {
   text-align: right;
 }
@@ -8985,12 +9006,20 @@ pre code {
   background: #F38958;
 }
 
+.main-container .home section #import-type ul li [class*="icon"] {
+  margin: 0 0 0 10px;
+}
+
 .main-container .home section #file-to-import {
   text-align: left;
 }
 
 .main-container .home section #file-to-import ul li.active {
   background: #9555B5;
+}
+
+.main-container .home section #file-to-import ul li [class*="icon"] {
+  margin: 0 10px 0 0;
 }
 
 .main-container .home section #import-type .subtitle,
@@ -9094,6 +9123,18 @@ pre code {
   margin: 0 auto;
 }
 
+.main-container .home section .item .item-title {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Overpass Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #0A2031;
+}
+
+.main-container .home section .item p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 1220px) {
   .main-container .home section:first-child {
     padding: 127px 0 120px;
@@ -9168,6 +9209,12 @@ pre code {
   }
 }
 
+@media (max-width: 769px) {
+  .main-container .home section .row [class*="col"] {
+    margin: 0 auto 15px;
+  }
+}
+
 @media (max-width: 576px) {
   .site-header .logo {
     font-size: 14px;
@@ -9190,6 +9237,17 @@ pre code {
   }
   .main-container .home section .our-clients-block [class*="col"] {
     padding: 30px 15px;
+  }
+  .main-container .home section:nth-child(5) {
+    text-align: center;
+  }
+  .main-container .home section:nth-child(5) .buttons .btn {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .main-container .home section:nth-child(5) .buttons .btn:first-child {
+    margin: 0 0 20px;
   }
   .nav-open header {
     position: fixed;

@@ -81,6 +81,15 @@
                     justify-content: center;
                     flex-direction: column;
                 }
+
+                .buttons {
+                    margin: 30px 0 0;
+                    text-align: center;
+
+                    [class*="icon"] {
+                        margin: 0 10px 0 0;
+                    }
+                }
             }
 
             #import-type {
@@ -90,6 +99,10 @@
                     li {
                         &.active {
                             background: $c-active-link;
+                        }
+
+                        [class*="icon"] {
+                            margin: 0 0 0 10px;
                         }
                     }
                 }
@@ -102,6 +115,10 @@
                     li {
                         &.active {
                             background: $c-purple-light;
+                        }
+
+                        [class*="icon"] {
+                            margin: 0 10px 0 0;
                         }
                     }
                 }
@@ -207,6 +224,20 @@
             .row {
                 [class*="col"] {
                     margin: 0 auto;
+                }
+            }
+
+            .item {
+                .item-title {
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-family: $primary-font_bold;
+                    text-transform: uppercase;
+                    color: $c-blue-dark;
+                }
+
+                p {
+                    color: $c-black-light;
                 }
             }
         }
