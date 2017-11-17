@@ -2,6 +2,7 @@
 layout: documentation
 github_link: configuration/products
 version: v1.0
+page_name: documentation
 ---
 
 **Products**

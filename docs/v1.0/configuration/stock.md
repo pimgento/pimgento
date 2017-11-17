@@ -2,6 +2,7 @@
 layout: documentation
 github_link: configuration/stock
 version: v1.0
+page_name: documentation
 ---
 
 **Stock**

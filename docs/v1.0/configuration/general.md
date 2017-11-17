@@ -2,6 +2,7 @@
 layout: documentation
 github_link: configuration/general
 version: v1.0
+page_name: documentation
 ---
 
 **General**

@@ -2,6 +2,7 @@
 layout: documentation
 github_link: configuration/indexer
 version: v1.0
+page_name: documentation
 ---
 
 **Indexer**

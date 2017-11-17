@@ -2,6 +2,7 @@
 layout: documentation
 github_link: important-stuff/how_to
 version: v1.0
+page_name: documentation
 ---
 
 How to...

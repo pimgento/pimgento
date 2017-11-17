@@ -44,3 +44,5 @@ defaults:
       version: "v2.0"
 
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]
+
+media_url: "/common/img"

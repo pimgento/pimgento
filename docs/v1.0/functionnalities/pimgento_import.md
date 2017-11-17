@@ -2,6 +2,7 @@
 layout: documentation
 github_link: functionnalities/pimgento_import
 version: v1.0
+page_name: documentation
 ---
 
 PIMGento Import

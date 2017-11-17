@@ -1,15 +1,16 @@
 ---
 layout: home
 version: v1.0
+page_name: home
 ---
 <div class="home">
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>The easiest and most efficient way to connect your Akeneo with your Magento!</h2>
-                    <p>PIMGento is the best way to connect your Akeneo Catalog with your Magento Ecommerce: easy to install, to configure and faster thant classical methods. Import all your catalog data in a reliable way into your website and increase your business efficiency!</p>
-                    <div class="buttons">
+                <div class="col-md-6 col-sm-6">
+                    <h2 data-anijs="if: scroll, on: window, do: fadeInDownBig animated, before: scrollReveal">The easiest and most efficient way to connect your Akeneo with your Magento!</h2>
+                    <p data-anijs="if: scroll, on: window, do: fadeInLeftBig animated, before: scrollReveal">PIMGento is the best way to connect your Akeneo Catalog with your Magento Ecommerce: easy to install, to configure and faster thant classical methods. Import all your catalog data in a reliable way into your website and increase your business efficiency!</p>
+                    <div class="buttons" data-anijs="if: scroll, on: window, do: fadeInLeftBig animated, before: scrollReveal">
                         <a href="" class="btn primary">
                             <span>Download</span>
                         </a>
@@ -18,8 +19,8 @@ version: v1.0
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="" alt="">
+                <div class="col-md-6 col-sm-6">
+                    <img src="{{ site.baseurl }}{{ site.media_url }}/terminal.png" alt="Terminal PIMGento" data-anijs="if: scroll, on:window, do: bounceInRight animated, before: scrollReveal">
                 </div>
             </div>
         </div>
@@ -28,7 +29,7 @@ version: v1.0
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Most Crazy Features</h2>
+                    <h2 class="title">Most Crazy Features</h2>
                 </div>
             </div>
             <div class="row">
@@ -93,7 +94,45 @@ version: v1.0
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>PIMGento import</h2>
+                    <h2 class="title">PIMGento import</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="import-type">
+                        <p class="subtitle">Select import type</p>
+                        <ul>
+                            <li class="type"><span>Categories</span></li>
+                            <li class="type active"><span>Product Categories</span></li>
+                            <li class="type"><span>Attributes</span></li>
+                            <li class="type"><span>Options</span></li>
+                            <li class="type"><span>Variants</span></li>
+                            <li class="type"><span>Products</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ site.baseurl }}{{ site.media_url }}/terminal.png" alt="Terminal PIMGento">
+                </div>
+                <div class="col-md-3">
+                    <div id="file-to-import">
+                        <p class="subtitle">Select file to import</p>
+                        <ul>
+                            <li class="type"><span>Categories.csv</span></li>
+                            <li class="type active"><span>Product-categories.csv</span></li>
+                            <li class="type"><span>Attributes.csv</span></li>
+                            <li class="type"><span>Options.csv</span></li>
+                            <li class="type"><span>Variants.csv</span></li>
+                            <li class="type"><span>Products.csv</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="buttons">
+                        <a href="" class="btn tertiary">
+                            <span>Import</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +141,31 @@ version: v1.0
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Our clients</h2>
+                    <h2 class="title">Our clients</h2>
+                </div>
+            </div>
+            <div class="our-clients-block">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="https://www.lancaster.com" target="_blank">
+                            <img src="{{ site.baseurl }}{{ site.media_url }}/clients/LANMAG@2x.png" alt="Lancaster">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="https://www.gsm55.com/" target="_blank">
+                            <img src="{{ site.baseurl }}{{ site.media_url }}/clients/GSMMAG@2x.png" alt="GSM55">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="https://www.aeliadutyfree.fr" target="_blank">
+                            <img src="{{ site.baseurl }}{{ site.media_url }}/clients/AELMAG@2x.png" alt="Aelia Duty Free">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="https://www.palaisdesthes.com" target="_blank">
+                            <img src="{{ site.baseurl }}{{ site.media_url }}/clients/PALMAG@2x.png" alt="Palais Des Thés">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,10 +174,18 @@ version: v1.0
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-
+                    <h4>Any difficulties ?</h4>
+                    <p>Look at the recurring questions, or open an issue.</p>
                 </div>
                 <div class="col-md-6">
-
+                    <div class="buttons">
+                        <a class="btn tertiary" href="" target="_blank">
+                            <span>Open new issue</span>
+                        </a>
+                        <a class="btn quaternary" href="" target="_blank">
+                            <span>Recurring questions</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

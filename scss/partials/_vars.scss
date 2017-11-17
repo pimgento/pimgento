@@ -1,11 +1,31 @@
-$button-box-shadow: 0 2px 40px 0 #3CE3BA;
-$button-border-radius: 3px;
+$screen__xxs: 320px;
+$screen__xs: 375px;
+$screen__s: 576px;
+$screen__tablet__mobile: 767px;
+$screen__tablet__portrait: 768px;
+$screen__m: 769px; // 769 in order to have the burger menu on Tablet portrait orientation
+$screen__l: 1025px;
+$screen__xl: 1220px;
 
 $c-white: #FFFFFF;
+$c-white-1: rgba(255, 255, 255, 0.95);
+$c-white-light: rgba(255, 255, 255, 0.5);
+$c-white-light-1: rgba(255, 255, 255, 0.66);
+$c-white-lighten: rgba(255, 255, 255, 0.2);
 $c-black: #000000;
 $c-black-light: rgba(0, 0, 0, 0.5);
+$c-black-lighten: rgba(0, 0, 0, 0.2);
 $c-grey: #F5F6F7;
+$c-blue-dark: #0A2031;
 $c-active-link: #F38958;
+$c-purple: #B96780;
+$c-purple-light: #9555B5;
+$c-purple-lighten: rgba(149, 85, 181, 0.7);
+$c-orange: #EE7447;
+$c-orange-light: #F38757;
+
+$button-box-shadow:  0 2px 6px 0 $c-black-lighten;
+$button-border-radius: 3px;
 
 $border-color: rgba(10, 32, 49, 0.08);
 

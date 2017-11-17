@@ -1,5 +1,5 @@
 @import 'reset';
-
+@import 'mixins/mixins';
 
 // Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
@@ -15,3 +15,4 @@
 @import 'partials/navigation';
 @import 'partials/search';
 @import 'partials/home';
+@import 'partials/responsive';

@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
+    <link rel="icon" href="{{ site.media_url | relative_url }}/logo.png" />
 
     <!-- WebUI popover css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
@@ -18,20 +19,20 @@
     </script>
 </head>
 <body>
+<div class="body-wrapper">
 
 <header class="site-header">
 
     <nav id="global-nav">
 
         <div class="container-fluid">
-
             {% if page.layout == 'home' %}
 
-            <h1><a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}">PIMGento</a></h1>
+            <h1><a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}"><span class="icon-logo"></span><span>PIMGento</span></a></h1>
 
             {% else %}
 
-            <a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}">PIMGento</a>
+            <a class="logo" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}"><span class="icon-logo"></span><span>PIMGento</span></a>
 
             {% endif %}
 
@@ -39,7 +40,15 @@
 
             {% include version-switcher.html %}
 
-            {% include navigation.html %}
+            <div class="navigation">
+                {% include navigation.html %}
+            </div>
+
+            <div class="btn-navigation">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
         </div>
 

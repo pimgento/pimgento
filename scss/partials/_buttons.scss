@@ -7,6 +7,8 @@
         font-size: 16px;
         font-family: $primary-font_bold;
         padding: 10px 20px;
+        box-shadow: $button-box-shadow;
+        color: $c-black;
 
         &:focus {
             box-shadow: none;
@@ -24,14 +26,30 @@
 
         &.secondary {
             background: transparent;
-            color: $c-white;
-            border: 2px solid $c-white;
-            opacity: 0.2;
+            color: $c-white-light-1;
+            border: 2px solid $c-white-lighten;
 
             &:hover {
-                opacity: 1;
                 background: $c-white;
                 color: $c-black;
+            }
+        }
+
+        &.tertiary {
+            background: $c-white;
+            color: $c-black-light;
+            border: 2px solid $c-black-lighten;
+            box-shadow: none;
+        }
+
+        &.quaternary {
+            background: $c-purple-light;
+            color: $c-white;
+            border: 2px solid $c-purple-light;
+            box-shadow: none;
+
+            &:hover {
+                background: $c-purple-lighten;
             }
         }
     }
