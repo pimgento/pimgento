@@ -1,0 +1,32 @@
+- title: "I. Important stuff"
+  items:
+   - title: "How to..."
+     href: 'important-stuff/how_to'
+   - title: "Compatibility"
+     href: 'important-stuff/compatibility'
+   - title: "Recurring questions"
+     href: 'important-stuff/recurring_questions'
+   - title: "Roadmap"
+     href: 'important-stuff/roadmap'
+
+- title: "II. Functionnalities"
+  items:
+   - title: "PIMGento import"
+     href: 'functionnalities/pimgento_import'
+   - title: "PIMGento interface"
+     href: 'functionnalities/pimgento_interface'
+   - title: "PIMGento CRON"
+     href: 'functionnalities/pimgento_cron'
+
+- title: "III. Configuration"
+  items:
+   - title: "General"
+     href: 'configuration/general'
+   - title: "Categories"
+     href: 'configuration/categories'
+   - title: "Attributes"
+     href: 'configuration/attributes'
+   - title: "Products"
+     href: 'configuration/products'
+   - title: "Images"
+     href: 'configuration/images'

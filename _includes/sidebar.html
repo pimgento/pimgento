@@ -17,13 +17,24 @@
 </div>-->
 <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
     <div class="sidebar-wrapper">
-        {% for entry in site.data.menu %}
-        <h3>{{ entry.title }}</h3>
-        <ul>
-            {% for item in entry.items %}
-            <li class="sidebar-link{% if item.href == page.github_link %} active{% endif %}"><a href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/{{ item.href }}" class="nav-link">{{ item.title }}</a></li>
+        {% if page.version == 'v1.0' %}
+            {% for entry in site.data.menu %}
+            <h3>{{ entry.title }}</h3>
+            <ul>
+                {% for item in entry.items %}
+                <li class="sidebar-link{% if item.href == page.github_link %} active{% endif %}"><a href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/{{ item.href }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
             {% endfor %}
-        </ul>
-        {% endfor %}
+        {% elsif page.version == 'v2.0' %}
+            {% for entry in site.data.menu_v2 %}
+            <h3>{{ entry.title }}</h3>
+            <ul>
+                {% for item in entry.items %}
+                <li class="sidebar-link{% if item.href == page.github_link %} active{% endif %}"><a href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/{{ item.href }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        {% endif %}
     </div>
 </div>
