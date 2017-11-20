@@ -46,3 +46,6 @@ defaults:
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]
 
 media_url: "/common/img"
+
+github_pimgento: "https://github.com/Agence-DnD/PIMGento"
+github_pimgento_2: "https://github.com/Agence-DnD/PIMGento-2"

@@ -228,6 +228,22 @@
             }
 
             .item {
+                .item-img {
+                    width: 25%;
+                    text-align: center;
+                    float: left;
+
+                    img {
+                        max-width: 80px;
+                    }
+                }
+
+                .item-content {
+                    width: 75%;
+                    float: left;
+                    padding: 0 0 0 20px;
+                }
+
                 .item-title {
                     font-size: 16px;
                     line-height: 25px;

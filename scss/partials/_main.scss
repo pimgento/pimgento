@@ -19,6 +19,10 @@
     border-right: 1px solid $border-color;
 }
 
+.bd-content {
+    word-break: break-all;
+}
+
 footer {
     border-top: 2px solid $border-color;
     height: 110px;

@@ -1,7 +1,7 @@
 ---
 layout: documentation
 github_link: important-stuff/recurring_questions
-version: v1.0
+version: v2.0
 page_name: documentation
 ---
 
