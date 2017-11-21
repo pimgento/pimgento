@@ -8616,6 +8616,11 @@ h3 {
   box-shadow: none;
 }
 
+.buttons .btn.tertiary:hover {
+  color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
 .buttons .btn.quaternary {
   background: #9555B5;
   color: #FFFFFF;
@@ -9015,7 +9020,7 @@ pre code {
   text-align: right;
 }
 
-.main-container .home section #import-type ul li.active {
+.main-container .home section #import-type ul li.active, .main-container .home section #import-type ul li:hover {
   background: #F38958;
 }
 
@@ -9027,7 +9032,7 @@ pre code {
   text-align: left;
 }
 
-.main-container .home section #file-to-import ul li.active {
+.main-container .home section #file-to-import ul li.active, .main-container .home section #file-to-import ul li:hover {
   background: #9555B5;
 }
 
@@ -9052,25 +9057,74 @@ pre code {
 .main-container .home section #file-to-import ul li {
   line-height: 14px;
   cursor: pointer;
-  margin: 0 0 15px;
+  padding: 18px 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .main-container .home section #import-type ul li span,
 .main-container .home section #file-to-import ul li span {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.main-container .home section #import-type ul li.active,
-.main-container .home section #file-to-import ul li.active {
+.main-container .home section #import-type ul li.active, .main-container .home section #import-type ul li:hover,
+.main-container .home section #file-to-import ul li.active,
+.main-container .home section #file-to-import ul li:hover {
   border-radius: 3px;
-  padding: 18px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 18px 20px;
 }
 
-.main-container .home section #import-type ul li.active span,
-.main-container .home section #file-to-import ul li.active span {
+.main-container .home section #import-type ul li.active span, .main-container .home section #import-type ul li:hover span,
+.main-container .home section #file-to-import ul li.active span,
+.main-container .home section #file-to-import ul li:hover span {
   color: #FFFFFF;
+}
+
+.main-container .home section #pimgento-import {
+  height: 390px;
+  width: 100% !important;
+  max-width: 521px;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 50px 20px 35px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+.main-container .home section #pimgento-import[data-termynal]:before {
+  width: 9px;
+  height: 9px;
+  top: 10px;
+  left: 9px;
+  box-shadow: 15px 0 0 #f4c025, 30px 0 0 #3ec930;
+  z-index: 2;
+}
+
+.main-container .home section #pimgento-import[data-termynal]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: #FFFEFF;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-container .home section #pimgento-import[data-termynal] span {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.main-container .home section #pimgento-import[data-termynal] span[data-ty="progress"] {
+  color: rgba(255, 255, 255, 0.66);
+  word-break: break-all;
 }
 
 .main-container .home section:nth-child(4) {
@@ -9136,6 +9190,16 @@ pre code {
   margin: 0 auto;
 }
 
+.main-container .home section .item {
+  margin: 0 0 40px;
+}
+
+.main-container .home section .item:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .main-container .home section .item .item-img {
   width: 25%;
   text-align: center;
@@ -9162,6 +9226,7 @@ pre code {
 
 .main-container .home section .item p {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 @media (max-width: 1220px) {

@@ -148,34 +148,36 @@ page_name: home
                     <div id="import-type">
                         <p class="subtitle">Select import type</p>
                         <ul>
-                            <li class="type"><span>Categories</span><span class="icon-type"></span></li>
-                            <li class="type active"><span>Product Categories</span><span class="icon-type"></span></li>
-                            <li class="type"><span>Attributes</span><span class="icon-type"></span></li>
-                            <li class="type"><span>Options</span><span class="icon-type"></span></li>
-                            <li class="type"><span>Variants</span><span class="icon-type"></span></li>
-                            <li class="type"><span>Products</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="1"><span>Categories</span><span class="icon-type"></span></li>
+                            <li class="type active" data-id="2"><span>Product Categories</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="3"><span>Attributes</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="4"><span>Options</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="5"><span>Variants</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="6"><span>Products</span><span class="icon-type"></span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-                    <img src="{{ site.baseurl }}{{ site.media_url }}/terminal.png" alt="Terminal PIMGento">
+                    <div id="pimgento-import" data-termynal data-ty-typeDelay="50">
+                        <span data-ty data-ty-prompt=">"></span>
+                    </div>
                 </div>
                 <div class="col-md-3" data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal">
                     <div id="file-to-import">
                         <p class="subtitle">Select file to import</p>
                         <ul>
-                            <li class="type"><span class="icon-file"></span><span>Categories.csv</span></li>
-                            <li class="type active"><span class="icon-file"></span><span>Product-categories.csv</span></li>
-                            <li class="type"><span class="icon-file"></span><span>Attributes.csv</span></li>
-                            <li class="type"><span class="icon-file"></span><span>Options.csv</span></li>
-                            <li class="type"><span class="icon-file"></span><span>Variants.csv</span></li>
-                            <li class="type"><span class="icon-file"></span><span>Products.csv</span></li>
+                            <li class="type" data-id="1" data-title="categories.csv"><span class="icon-file"></span><span>Categories.csv</span></li>
+                            <li class="type active" data-id="2" data-title="product-categories.csv"><span class="icon-file"></span><span>Product-categories.csv</span></li>
+                            <li class="type" data-id="3" data-title="attributes.csv"><span class="icon-file"></span><span>Attributes.csv</span></li>
+                            <li class="type" data-id="4" data-title="options.csv"><span class="icon-file"></span><span>Options.csv</span></li>
+                            <li class="type" data-id="5" data-title="variants.csv"><span class="icon-file"></span><span>Variants.csv</span></li>
+                            <li class="type" data-id="6" data-title="products.csv"><span class="icon-file"></span><span>Products.csv</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="buttons">
-                        <a href="" class="btn tertiary">
+                        <a href="#" id="launch-import" class="btn tertiary">
                             <span class="icon-arrow-up"></span><span>Import</span>
                         </a>
                     </div>

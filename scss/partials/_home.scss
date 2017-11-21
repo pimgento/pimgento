@@ -97,7 +97,8 @@
 
                 ul {
                     li {
-                        &.active {
+                        &.active,
+                        &:hover {
                             background: $c-active-link;
                         }
 
@@ -113,7 +114,8 @@
 
                 ul {
                     li {
-                        &.active {
+                        &.active,
+                        &:hover {
                             background: $c-purple-light;
                         }
 
@@ -139,21 +141,73 @@
                     li {
                         line-height: 14px;
                         cursor: pointer;
-                        margin: 0 0 15px;
+                        padding: 18px 0;
+                        transition: all $transition-duration $transition-timing-function;
 
                         span {
                             color: $c-black-light;
                             font-size: 14px;
+                            -webkit-touch-callout: none;
+                            -webkit-user-select: none;
+                            -khtml-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
                         }
 
-                        &.active {
+                        &.active,
+                        &:hover {
                             border-radius: $button-border-radius;
-                            padding: 18px 20px;
                             box-shadow: $button-box-shadow;
+                            padding: 18px 20px;
 
                             span {
                                 color: $c-white;
                             }
+                        }
+                    }
+                }
+            }
+
+            #pimgento-import {
+                height: 390px;
+                width: 100% !important;
+                max-width: 521px;
+                margin: 0 auto;
+                border-radius: 6px;
+                padding: 50px 20px 35px;
+                background: $c-black-1;
+                font-size: 14px;
+
+                &[data-termynal] {
+                    &:before {
+                        width: 9px;
+                        height: 9px;
+                        top: 10px;
+                        left: 9px;
+                        -webkit-box-shadow: 15px 0 0 #f4c025, 30px 0 0 #3ec930;
+                        box-shadow: 15px 0 0 #f4c025, 30px 0 0 #3ec930;
+                        z-index: 2;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 28px;
+                        background: #FFFEFF;
+                        border-radius: 6px 6px 0 0;
+                        border: 1px solid $c-black-lighten;
+                    }
+
+                    span {
+                        color: $c-white-1;
+
+                        &[data-ty="progress"] {
+                            color: $c-white-light-1;
+                            word-break: break-all;
                         }
                     }
                 }
@@ -228,6 +282,14 @@
             }
 
             .item {
+                margin: 0 0 40px;
+
+                &:after {
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+
                 .item-img {
                     width: 25%;
                     text-align: center;
@@ -254,6 +316,7 @@
 
                 p {
                     color: $c-black-light;
+                    font-size: 14px;
                 }
             }
         }

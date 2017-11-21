@@ -41,6 +41,11 @@
             color: $c-black-light;
             border: 2px solid $c-black-lighten;
             box-shadow: none;
+
+            &:hover {
+                color: $c-black-1;
+                border-color: $c-black-1;
+            }
         }
 
         &.quaternary {
