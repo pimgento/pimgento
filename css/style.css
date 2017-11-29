@@ -9308,6 +9308,9 @@ pre code {
   .main-container .home section .row [class*="col"] {
     margin: 0 auto 15px;
   }
+}
+
+@media (max-width: 767px) {
   .bd-sidebar {
     margin: 15px 0;
   }

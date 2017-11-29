@@ -113,7 +113,9 @@
             }
         }
     }
+}
 
+@include breakpoint($screen__tablet__mobile) {
     .bd-sidebar {
         margin: 15px 0;
 

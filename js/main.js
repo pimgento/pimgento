@@ -1,7 +1,6 @@
 /**
  * @author                 Agence Dn'D <contact@dnd.fr>
  * @copyright              Copyright (c) 2017 Agence Dn'D
- * @license                http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link                   http://www.dnd.fr/
  */
 
@@ -52,7 +51,7 @@ function launchTerminal(id, button, importContainer, fileContainer) {
                 var fileSelectedTitle = fileSelected.attr('data-title');
 
                 var dt = new Date();
-                var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                var time = addZero(dt.getHours()) + ":" + addZero(dt.getMinutes()) + ":" + addZero(dt.getSeconds());
 
                 if (importSelectedDataId === fileSelectedDataId) {
                     $(id).html("<span data-ty='progress' data-ty data-ty-prompt='>' data-ty-progressChar='.'></span><span data-ty data-ty data-ty-prompt='>'>["+ time +"] You successfully import "+ fileSelectedTitle + "</span>");
@@ -68,4 +67,11 @@ function launchTerminal(id, button, importContainer, fileContainer) {
     } else {
         new Termynal(id);
     }
+}
+
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
 }
