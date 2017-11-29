@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67">
+  <defs>
+    <linearGradient id="a" x1="0%" x2="64.7033222%" y1="100%" y2="34.6533377%">
+      <stop stop-color="#B04615" offset="0%"/>
+      <stop stop-color="#973000" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0%" x2="65.5776736%" y1="100%" y2="33.7702926%">
+      <stop stop-color="#FFBB9B" offset="0%"/>
+      <stop stop-color="#FFB897" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="c" x1="0%" x2="65.9721179%" y1="100%" y2="33.3719265%">
+      <stop stop-color="#FFBB9B" offset="0%"/>
+      <stop stop-color="#FFB897" offset="99.4021046%"/>
+    </linearGradient>
+    <linearGradient id="d" x1="0%" x2="65.9721179%" y1="100%" y2="33.3719265%">
+      <stop stop-color="#B64C1B" offset="0%"/>
+      <stop stop-color="#CF6534" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="e" x1="0%" x2="65.9721179%" y1="100%" y2="33.3719265%">
+      <stop stop-color="#EC8251" offset="0%"/>
+      <stop stop-color="#F88E5D" offset="98.7364477%"/>
+    </linearGradient>
+    <linearGradient id="f" x1="0%" x2="65.9721179%" y1="100%" y2="33.3719265%">
+      <stop stop-color="#B74D1C" offset="0%"/>
+      <stop stop-color="#CF6534" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" stroke-width="2">
+    <path stroke="url(#a)" d="M5.78605568 59.1001982L5.78605568 38.9134288 13.1154867 31.5839978 13.1154867 51.7707672 33.3022561 51.7707672 25.9728251 59.1001982z" transform="rotate(-135 11.06 41.827)"/>
+    <path fill="url(#b)" stroke="url(#c)" d="M31.2418998 84.5560423L31.2418998 64.3692729 38.5713308 57.0398419 38.5713308 77.2266113 58.7581002 77.2266113 51.4286692 84.5560423z" transform="rotate(135 41.485 62.313)"/>
+    <path fill="url(#d)" stroke="url(#d)" d="M31.5839978 33.3022561L31.5839978 13.1154867 38.9134288 5.78605568 38.9134288 25.9728251 59.1001982 25.9728251 51.7707672 33.3022561z" transform="rotate(-45 24.857 28.03)"/>
+    <path fill="url(#e)" stroke="url(#f)" d="M57.0398419 58.7581002L57.0398419 38.5713308 64.3692729 31.2418998 64.3692729 51.4286692 84.5560423 51.4286692 77.2266113 58.7581002z" transform="rotate(45 79.283 24.515)"/>
+  </g>
+</svg>

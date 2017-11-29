@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="a" x1="-74.3883503%" x2="142.89079%" y1="77.9015005%" y2="77.9015005%">
+      <stop stop-color="#EE6739" offset="0%"/>
+      <stop stop-color="#F9B581" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0%" y1="459.468126%" y2="459.468126%">
+      <stop stop-color="#C05625" offset="0%"/>
+      <stop stop-color="#CB6130" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="c" x1="0%" y1="50%" y2="50%">
+      <stop stop-color="#A43A09" offset="0%"/>
+      <stop stop-color="#BA501F" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="e" x1="0%" y1="46.0654646%" y2="46.0654646%">
+      <stop stop-color="#B94F1E" offset="0%"/>
+      <stop stop-color="#BF5524" offset="100%"/>
+    </linearGradient>
+    <rect id="d" width="4" height="42" x="48" rx="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M0 0H100V100H0z" transform="translate(-22 -22)"/>
+    <path fill="url(#a)" fill-rule="nonzero" d="M4,20.5350909 L35.2635106,20.5350909 L4,20.5350909 Z M18.3331838,16.5350909 L4,16.5350909 C1.790861,16.5350909 2.81996648e-14,18.3259519 2.84217094e-14,20.5350909 C2.8643754e-14,22.7442299 1.790861,24.5350909 4,24.5350909 L18.1771258,24.5350909 C18.0603771,23.7068327 18,22.8604672 18,22 L18,20 C18,18.8147865 18.1145504,17.6563277 18.3331838,16.5350909 Z" opacity=".65999997" transform="rotate(-45 42.85 36.47)"/>
+    <g fill="url(#b)" transform="rotate(-45 28.922 -31.3)">
+      <rect width="16" height="2" rx="1"/>
+      <rect width="16" height="2" y="20" rx="1"/>
+    </g>
+    <path fill="url(#c)" fill-rule="nonzero" d="M46,4 L36,4 C27.163444,4 20,11.163444 20,20 L20,22 C20,30.836556 27.163444,38 36,38 L46,38 L46,4 Z M36,2 L48,2 L48,40 L36,40 C26.0588745,40 18,31.9411255 18,22 L18,20 C18,10.0588745 26.0588745,2 36,2 Z" transform="rotate(-45 42.85 36.47)"/>
+    <g transform="rotate(-45 42.85 36.47)">
+      <use fill="#EF8554" fill-opacity=".66" xlink:href="#d"/>
+      <rect width="6" height="44" x="47" y="-1" stroke="url(#e)" stroke-width="2" rx="3"/>
+    </g>
+  </g>
+</svg>

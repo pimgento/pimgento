@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="61">
+  <defs>
+    <linearGradient id="a" x1="0%" y1="50%" y2="50%">
+      <stop stop-color="#973000" offset="1.09215561%"/>
+      <stop stop-color="#BB5120" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0%" y1="50%" y2="50%">
+      <stop stop-color="#E57B4A" offset="0%"/>
+      <stop stop-color="#F88E5D" offset="98.7424267%"/>
+    </linearGradient>
+    <linearGradient id="c" x1="0%" y1="50%" y2="50%">
+      <stop stop-color="#AC4211" offset="0%"/>
+      <stop stop-color="#CF6534" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(1 33.333)">
+      <circle cx="13" cy="13" r="9" fill="#FFB491" fill-opacity=".33"/>
+      <rect width="57" height="26" stroke="url(#a)" stroke-width="1.66666667" rx="13"/>
+    </g>
+    <path fill="url(#b)" stroke="url(#c)" stroke-width="1.66666667" d="M13,0 L44,0 C51.1797017,-1.31888981e-15 57,5.82029825 57,13 L57,13 C57,20.1797017 51.1797017,26 44,26 L13,26 C5.82029825,26 -8.97096963e-16,20.1797017 -1.77635684e-15,13 L0,13 L0,13 C-8.79259876e-16,5.82029825 5.82029825,1.31888981e-15 13,0 L13,0 Z M44,22 C48.9705627,22 53,17.9705627 53,13 C53,8.02943725 48.9705627,4 44,4 C39.0294373,4 35,8.02943725 35,13 C35,17.9705627 39.0294373,22 44,22 Z" transform="translate(1 1)"/>
+  </g>
+</svg>
