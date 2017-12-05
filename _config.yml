@@ -30,10 +30,10 @@ plugins:
 
 versions:
    -
-      name: "1.0"
+      name: "1"
       url: /docs/v1.0/
    -
-      name: "2.0"
+      name: "2"
       url: /docs/v2.0/
 
 doc_url: /docs/

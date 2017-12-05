@@ -1,6 +1,6 @@
 <div class="version-switcher dropdown" data-version="{{ page.doc_version }}">
     <button id="version-switcher-button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Magento {{ page.version }}
+        Magento {% if page.version == "v1.0" %}1{% elsif page.version == "v2.0" %}2{% endif %}
     </button>
 
     <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="version-switcher-button">
@@ -8,5 +8,4 @@
             <li><a class="dropdown-item" href="{{ site.baseurl }}{{ version.url }}{{ page.github_link | replace: ".md",".html" }}">Magento {{ version.name }}</a></li>
         {% endfor %}
     </ul>
-
 </div>

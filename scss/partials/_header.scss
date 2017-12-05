@@ -93,6 +93,13 @@
             }
         }
 
+        .dropdown-menu {
+            &.show {
+                min-width: inherit;
+                width: 100%;
+            }
+        }
+
         ul {
             li {
                 line-height: normal;

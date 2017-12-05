@@ -8784,6 +8784,11 @@ pre code {
   transform: rotate(-45deg);
 }
 
+.site-header .version-switcher .dropdown-menu.show {
+  min-width: inherit;
+  width: 100%;
+}
+
 .site-header .version-switcher ul li {
   line-height: normal;
 }
