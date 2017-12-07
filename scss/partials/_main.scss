@@ -1,24 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li,
-a {
-    font-family: $primary-font;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-body {
-    background: #FFF url("../common/img/bg.png") no-repeat;
-    background-position: top right;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .main-container {
     section {
         padding: 50px 0;
@@ -29,5 +8,44 @@ body {
                 margin: auto;
             }
         }
+    }
+}
+
+.body-wrapper {
+    overflow: hidden;
+}
+
+.bd-sidebar {
+    border-right: 1px solid $border-color;
+}
+
+.bd-content {
+    word-break: break-all;
+}
+
+footer {
+    border-top: 2px solid $border-color;
+    height: 110px;
+    line-height: 110px;
+
+    p {
+        color: $c-black-light;
+    }
+}
+
+.bg-white {
+    background: $c-white;
+}
+
+pre code {
+    display: block;
+    background: $border-color;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.container-fluid{
+    &.bg-white {
+        min-height: calc(100vh - 185px);
     }
 }

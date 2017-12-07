@@ -1,0 +1,43 @@
+<!--<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+    <div id="search-container">
+        <div class="input-wrapper">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+        <ul id="results-container"></ul>
+    </div>
+
+    <script src="{{ site.baseurl }}/search-script.js" type="text/javascript"></script>
+    <script>
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/search.json'
+        })
+    </script>
+</div>-->
+<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+    <div class="buttons">
+        <a href="#" class="toggle-sidebar btn tertiary"><span>Table of contents</span><span class="icon-dropdown"></span></a>
+    </div>
+    <div class="sidebar-wrapper">
+        {% if page.version == 'v1.0' %}
+            {% for entry in site.data.menu %}
+            <h3>{{ entry.title }}</h3>
+            <ul>
+                {% for item in entry.items %}
+                <li class="sidebar-link{% if item.href == page.github_link %} active{% endif %}"><a href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/{{ item.href }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        {% elsif page.version == 'v2.0' %}
+            {% for entry in site.data.menu_v2 %}
+            <h3>{{ entry.title }}</h3>
+            <ul>
+                {% for item in entry.items %}
+                <li class="sidebar-link{% if item.href == page.github_link %} active{% endif %}"><a href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/{{ item.href }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

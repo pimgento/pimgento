@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="54" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="a" x1="679.785156%" x2="679.785156%" y1="100%" y2="-155.578316%">
+      <stop stop-color="#8D3E56" offset="0%"/>
+      <stop stop-color="#AB5C74" offset="100%"/>
+    </linearGradient>
+    <rect id="b" width="6" height="6" rx="3"/>
+    <rect id="c" width="6" height="6" rx="3"/>
+    <rect id="d" width="6" height="6" rx="3"/>
+    <rect id="e" width="6" height="6" rx="3"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="url(#a)" d="M4 7L4 27.5 2 27.5 2 7" transform="translate(2 26)"/>
+    <g transform="translate(2 26)">
+      <use fill="#C6778F" fill-opacity=".66" xlink:href="#b"/>
+      <rect width="8" height="8" x="-1" y="-1" stroke="#964A61" stroke-width="2" rx="4"/>
+    </g>
+    <path fill="#FDB1C8" d="M4 0.5L4 19 2 19 2 0.5" transform="translate(2 1)"/>
+    <path fill="url(#a)" d="M4 6.5L4 14.5 2 14.5 2 6.5" transform="translate(14 39)"/>
+    <g transform="translate(14 39)">
+      <use fill="#C6778F" fill-opacity=".66" xlink:href="#c"/>
+      <rect width="8" height="8" x="-1" y="-1" stroke="#94485F" stroke-width="2" rx="4"/>
+    </g>
+    <path fill="#FDB1C8" d="M4 0.5L4 32 2 32 2 0.5" transform="translate(14 1)"/>
+    <path fill="url(#a)" d="M4 7L4 52 2 52 2 7" transform="translate(26 2)"/>
+    <g transform="translate(26 2)">
+      <use fill="#D98AA2" fill-opacity=".66" xlink:href="#d"/>
+      <rect width="8" height="8" x="-1" y="-1" stroke="#964A61" stroke-width="2" rx="4"/>
+    </g>
+    <path fill="url(#a)" d="M4 7L4 27.5 2 27.5 2 7" transform="translate(38 26)"/>
+    <g transform="translate(38 26)">
+      <use fill="#D4859D" fill-opacity=".66" xlink:href="#e"/>
+      <rect width="8" height="8" x="-1" y="-1" stroke="#964A61" stroke-width="2" rx="4"/>
+    </g>
+    <path fill="#FDB1C8" d="M4 0.5L4 19 2 19 2 0.5" transform="translate(38 1)"/>
+  </g>
+</svg>

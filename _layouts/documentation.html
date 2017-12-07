@@ -1,0 +1,21 @@
+{% include header.html %}
+
+<div class="container-fluid bg-white">
+    <div class="row flex-xl-nowrap">
+        {% include sidebar.html %}
+
+        <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include footer-scripts.html %}
+
+<script>
+    $(document).ready(function() {
+        $('body').addClass('layout-documentation');
+    });
+</script>
+
+{% include footer.html %}

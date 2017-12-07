@@ -6,11 +6,19 @@
         transition: all $transition-duration $transition-timing-function;
         font-size: 16px;
         font-family: $primary-font_bold;
+        padding: 10px 20px;
+        color: $c-black;
+        position: relative;
+
+        &:focus {
+            box-shadow: none;
+        }
 
         &.primary {
             background: $c-white;
             color: $c-black;
             border: 2px solid $c-white;
+            box-shadow: $button-box-shadow;
 
             &:hover {
                 background: rgba(255,255,255,0.2);
@@ -19,14 +27,35 @@
 
         &.secondary {
             background: transparent;
-            color: $c-white;
-            border: 2px solid $c-white;
-            opacity: 0.2;
+            color: $c-white-light-1;
+            border: 2px solid $c-white-lighten;
 
             &:hover {
-                opacity: 1;
                 background: $c-white;
                 color: $c-black;
+            }
+        }
+
+        &.tertiary {
+            background: $c-white;
+            color: $c-black-light;
+            border: 2px solid $c-black-lighten;
+            box-shadow: none;
+
+            &:hover {
+                color: $c-black-1;
+                border-color: $c-black-1;
+            }
+        }
+
+        &.quaternary {
+            background: $c-purple-light;
+            color: $c-white;
+            border: 2px solid $c-purple-light;
+            box-shadow: none;
+
+            &:hover {
+                background: $c-purple-lighten;
             }
         }
     }
