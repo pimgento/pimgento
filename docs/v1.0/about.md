@@ -1,7 +1,7 @@
 ---
 layout: default
 github_link: about
-version: v2.0
+version: v1.0
 page_name: about
 ---
 
