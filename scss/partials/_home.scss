@@ -143,6 +143,7 @@
                         cursor: pointer;
                         padding: 18px 0;
                         transition: all $transition-duration $transition-timing-function;
+                        margin: 0 0 2px;
 
                         span {
                             color: $c-black-light;
