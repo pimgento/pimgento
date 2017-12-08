@@ -1,23 +1,6 @@
 /* ==========================================
  *
- *  Gulpfile.js for Magento 1 custom theme
  *  Author: Agence Dn'D
- *
- *    Table of content :
- *
- *    - GULP LIBRARIES
- *        > gulp
- *        > gulp-compass
- *        > gulp-image-optimization
- *        > browserSync
- *
- *    - SOURCE FILE PATHS
- *    - WATCHED TASKS LIST
- *        > Compass task
- *        > Watch task
- *        > Default task
- *    - MANUAL TASKS LIST
- *        > Image optimization
  *
  * ==========================================/
 
@@ -28,6 +11,7 @@
 const gulp = require('gulp');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
+var cleanCss = require('gulp-clean-css');
 
 /* ==========================================
     SOURCE FILE PATHS
@@ -55,6 +39,7 @@ gulp.task('sass', function (){
         .pipe(prefix(
             "last 1 version", "> 1%", "ie 8", "ie 7"
         ))
+        .pipe(cleanCss({compatibility: 'ie8'}))
         .pipe(gulp.dest('css'));
 });
 
