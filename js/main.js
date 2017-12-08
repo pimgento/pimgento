@@ -10,6 +10,7 @@ $(document).ready(function(){
     selectImport('#import-type');
     selectImport('#file-to-import');
     launchTerminal('#pimgento-import', '#launch-import','#import-type','#file-to-import');
+    launchLazyload('img');
 });
 
 function toggleMenu(button, menu) {
@@ -74,4 +75,8 @@ function addZero(i) {
         i = "0" + i;
     }
     return i;
+}
+
+function launchLazyload(target) {
+    $(target).lazyload();
 }
