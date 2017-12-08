@@ -9064,6 +9064,7 @@ pre code {
   cursor: pointer;
   padding: 18px 0;
   transition: all 0.2s ease-in-out;
+  margin: 0 0 2px;
 }
 
 .main-container .home section #import-type ul li span,
