@@ -13,7 +13,9 @@
     "popper.js": "^1.12.9",
     "scrollreveal": "^3.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-clean-css": "^3.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
