@@ -12,6 +12,7 @@ const gulp = require('gulp');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cleanCss = require('gulp-clean-css');
+var sourcemaps = require('gulp-sourcemaps');
 
 /* ==========================================
     SOURCE FILE PATHS
@@ -32,6 +33,7 @@ const paths = {
 
 gulp.task('sass', function (){
     gulp.src(['scss/*.scss'])
+        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['scss'],
             outputStyle: 'expanded'
@@ -40,6 +42,7 @@ gulp.task('sass', function (){
             "last 1 version", "> 1%", "ie 8", "ie 7"
         ))
         .pipe(cleanCss({compatibility: 'ie8'}))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'));
 });
 
