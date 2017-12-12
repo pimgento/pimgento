@@ -117,3 +117,13 @@
         background-size: cover;
     }
 }
+
+.site-header {
+    overflow: hidden;
+}
+
+.nav-open {
+    .site-header {
+        overflow: visible;
+    }
+}
