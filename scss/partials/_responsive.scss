@@ -186,6 +186,21 @@
             }
         }
     }
+
+    .main-container {
+        .home {
+            section {
+                #file-to-import,
+                #import-type ul {
+                    margin: 0;
+                }
+
+                #pimgento-import {
+                    margin: 0 auto 15px;
+                }
+            }
+        }
+    }
 }
 
 @include breakpoint($screen__s) {
@@ -203,6 +218,11 @@
                 font-size: 12px;
             }
         }
+    }
+
+    .dropdown-item {
+        padding: 5px 0;
+        text-align: center;
     }
 
     .main-container {
@@ -245,6 +265,14 @@
                             }
                         }
                     }
+                }
+
+                .item {
+                    margin: 0 0 15px;
+                }
+
+                #pimgento-import {
+                    height: 315px;
                 }
             }
         }
