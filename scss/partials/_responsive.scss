@@ -18,7 +18,7 @@
 
     #global-nav {
         .navigation {
-            position: absolute;
+            position: fixed;
             left: 100%;
             right: -100%;
             top: 78px;
@@ -30,6 +30,7 @@
             &.isopen {
                 right: 0;
                 left: 0;
+                position: absolute;
             }
         }
 
