@@ -11,6 +11,7 @@ $(document).ready(function(){
     selectImport('#file-to-import');
     launchTerminal('#pimgento-import', '#launch-import','#import-type','#file-to-import');
     launchLazyload('img');
+    customSelect('.custom-dropdown-container', '.custom-dropdown', '.custom-dropdown-menu');
 });
 
 function toggleMenu(button, menu) {
@@ -79,4 +80,12 @@ function addZero(i) {
 
 function launchLazyload(target) {
     $(target).lazyload();
+}
+
+function customSelect(container, dropdown, menu) {
+    $(container).find(dropdown).click(function (e) {
+       e.preventDefault();
+       $(this).parent(container).toggleClass('open');
+       $(this).siblings(menu).slideToggle();
+    });
 }
