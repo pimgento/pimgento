@@ -303,6 +303,8 @@
             }
 
             &.isopen {
+                position: fixed;
+
                 &:before {
                     left: 0;
                     right: 0;
