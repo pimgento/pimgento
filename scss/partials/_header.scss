@@ -53,56 +53,99 @@
     .version-switcher {
         float: left;
 
-        #version-switcher-button {
-            -webkit-appearance: none;
-            background: transparent;
-            border: 1px solid $c-white-light;
-            color: $c-white;
+        .custom-dropdown-container {
+            height: 38px;
+            display: inline-block;
+            vertical-align: middle;
             position: relative;
-            padding-right: 30px;
 
-            &:focus {
-                box-shadow: none;
+            #version-switcher-button {
+                -webkit-appearance: none;
+                background: transparent;
+                border: 1px solid $c-white-light;
+                color: $c-white;
+                position: relative;
+                padding-right: 30px;
+                display: block;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &:before,
+                &:after {
+                    content: '';
+                    width: 7px;
+                    height: 1px;
+                    background: $c-white;
+                    position: absolute;
+                    right: 10px;
+                    border: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    transition: all $transition-duration $transition-timing-function;
+                }
+
+                &:before {
+                    -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                    -ms-transform: rotate(45deg); /* IE 9 */
+                    transform: rotate(45deg);
+                    right: 15px;
+                }
+
+                &:after {
+                    -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                    -ms-transform: rotate(-45deg); /* IE 9 */
+                    transform: rotate(-45deg);
+                }
             }
 
-            &:before,
-            &:after {
-                content: '';
-                width: 7px;
-                height: 1px;
-                background: $c-white;
+            .custom-dropdown-menu {
+                display: none;
                 position: absolute;
-                right: 10px;
-                border: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-            }
-
-            &:before {
-                -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                -ms-transform: rotate(45deg); /* IE 9 */
-                transform: rotate(45deg);
-                right: 15px;
-            }
-
-            &:after {
-                -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                -ms-transform: rotate(-45deg); /* IE 9 */
-                transform: rotate(-45deg);
-            }
-        }
-
-        .dropdown-menu {
-            &.show {
-                min-width: inherit;
+                top: 105%;
+                padding: 5px 0;
+                background: $c-white;
                 width: 100%;
-            }
-        }
+                border-radius: 0.25em;
+                border: 1px solid $c-black-lighten;
 
-        ul {
-            li {
-                line-height: normal;
+                li {
+                    line-height: normal;
+                    padding: 5px 10px;
+                    list-style-type: none;
+                    text-align: center;
+                    transition: all $transition-duration $transition-timing-function;
+
+                    &:hover {
+                        background: $c-grey;
+                    }
+
+                    a {
+                        color: $c-blue-dark;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            &.open {
+                #version-switcher-button {
+                    &:before {
+                        -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                        -ms-transform: rotate(-45deg); /* IE 9 */
+                        transform: rotate(-45deg);
+                    }
+
+                    &:after {
+                        -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                        -ms-transform: rotate(45deg); /* IE 9 */
+                        transform: rotate(45deg);
+                    }
+                }
             }
         }
     }
