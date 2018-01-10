@@ -11,6 +11,17 @@
 
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 
+    <!-- Preload -->
+
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style"/>
+    <link rel="preload" href="{{ '/css/vendor/termynal.css' | relative_url }}" media="screen" as="style"/>
+    <link rel="preload" href="{{ '/css/style.css' | relative_url }}" as="style"/>
+
+    <link rel="preload" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css" media="screen" as="style">
+    <link rel="preload" href="https://anijs.github.io/lib/anicollection/anicollection.css" media="screen" as="style">
+
+    <!-- Normal -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ '/css/vendor/termynal.css' | relative_url }}" media="screen"/>
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
