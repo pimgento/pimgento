@@ -11,7 +11,6 @@ $(document).ready(function(){
     selectImport('#file-to-import');
     launchTerminal('#pimgento-import', '#launch-import','#import-type','#file-to-import');
     launchLazyload('img');
-    console.log('test');
 });
 
 function toggleMenu(button, menu) {
