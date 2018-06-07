@@ -81,8 +81,6 @@
             .line {
                 &:nth-child(1) {
                     top: 9px;
-                    -webkit-transform: rotate(135deg);
-                    -ms-transform: rotate(135deg);
                     transform: rotate(135deg);
                 }
 
@@ -93,8 +91,6 @@
 
                 &:nth-child(3) {
                     top: 9px;
-                    -webkit-transform: rotate(-135deg);
-                    -ms-transform: rotate(-135deg);
                     transform: rotate(-135deg);
                 }
             }
@@ -159,8 +155,6 @@
                 [class*="icon"] {
                     &:before {
                         transform: rotate(180deg);
-                        -ms-transform: rotate(180deg);
-                        -webkit-transform: rotate(180deg);
                     }
                 }
             }
@@ -316,8 +310,6 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
             left: 0;
             right: 0;
 
