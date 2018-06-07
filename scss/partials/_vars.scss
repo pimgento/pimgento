@@ -7,16 +7,18 @@ $screen__m: 769px; // 769 in order to have the burger menu on Tablet portrait or
 $screen__l: 1025px;
 $screen__xl: 1220px;
 
-$c-white: #FFFFFF;
+$c-white: #FFF;
 $c-white-1: rgba(255, 255, 255, 0.95);
+$c-white-2: #FFFEFF;
 $c-white-light: rgba(255, 255, 255, 0.5);
 $c-white-light-1: rgba(255, 255, 255, 0.66);
 $c-white-lighten: rgba(255, 255, 255, 0.2);
-$c-black: #000000;
+$c-black: #000;
 $c-black-1: rgba(0, 0, 0, 0.80);
 $c-black-light: rgba(0, 0, 0, 0.6);
 $c-black-lighten: rgba(0, 0, 0, 0.2);
 $c-grey: #F5F6F7;
+$c-lightgray: #DFE2E5;
 $c-blue-dark: #0A2031;
 $c-active-link: #F38958;
 $c-purple: #B96780;
@@ -24,13 +26,15 @@ $c-purple-light: #9555B5;
 $c-purple-lighten: rgba(149, 85, 181, 0.7);
 $c-orange: #EE7447;
 $c-orange-light: #F38757;
+$c-yellow: #F4C025;
+$c-green: #3EC930;
 
 $button-box-shadow:  0 2px 6px 0 $c-black-lighten;
 $button-border-radius: 3px;
 
 $border-color: rgba(10, 32, 49, 0.08);
 
-$table-background: #f6f8fa;
+$table-background: #F6F8FA;
 
 $primary-font-name: 'Overpass';
 $primary-font_bold-name: 'Overpass Bold';

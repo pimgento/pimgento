@@ -32,7 +32,7 @@
             &:first-child {
                 color: $c-white;
                 padding: 127px 0 50px;
-                background: #FFF url(../common/img/bg.svg) no-repeat;
+                background: $c-white url("../common/img/bg.svg") no-repeat;
                 background-size: 100% 100%;
 
                 h2 {
@@ -70,8 +70,6 @@
                     height: 200px;
                     margin: auto;
                     background: $c-grey;
-                    -ms-transform: rotate(-5deg);
-                    -webkit-transform: rotate(-5deg);
                     transform: rotate(-5deg);
                     z-index: 0;
                 }
@@ -148,11 +146,6 @@
                         span {
                             color: $c-black-light;
                             font-size: 14px;
-                            -webkit-touch-callout: none;
-                            -webkit-user-select: none;
-                            -khtml-user-select: none;
-                            -moz-user-select: none;
-                            -ms-user-select: none;
                             user-select: none;
                         }
 
@@ -186,8 +179,7 @@
                         height: 9px;
                         top: 10px;
                         left: 9px;
-                        -webkit-box-shadow: 15px 0 0 #f4c025, 30px 0 0 #3ec930;
-                        box-shadow: 15px 0 0 #f4c025, 30px 0 0 #3ec930;
+                        box-shadow: 15px 0 0 $c-yellow, 30px 0 0 $c-green;
                         z-index: 2;
                     }
 
@@ -198,7 +190,7 @@
                         left: 0;
                         right: 0;
                         height: 28px;
-                        background: #FFFEFF;
+                        background: $c-white-2;
                         border-radius: 6px 6px 0 0;
                         border: 1px solid $c-black-lighten;
                     }
@@ -231,8 +223,6 @@
                     height: 200px;
                     margin: auto;
                     background: $c-white;
-                    -ms-transform: rotate(5deg);
-                    -webkit-transform: rotate(5deg);
                     transform: rotate(5deg);
                     z-index: 0;
                 }

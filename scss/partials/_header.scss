@@ -60,7 +60,7 @@
             position: relative;
 
             #version-switcher-button {
-                -webkit-appearance: none;
+                appearance: none;
                 background: transparent;
                 border: 1px solid $c-white-light;
                 color: $c-white;
@@ -88,15 +88,11 @@
                 }
 
                 &:before {
-                    -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                    -ms-transform: rotate(45deg); /* IE 9 */
                     transform: rotate(45deg);
                     right: 15px;
                 }
 
                 &:after {
-                    -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                    -ms-transform: rotate(-45deg); /* IE 9 */
                     transform: rotate(-45deg);
                 }
             }
@@ -135,14 +131,10 @@
             &.open {
                 #version-switcher-button {
                     &:before {
-                        -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                        -ms-transform: rotate(-45deg); /* IE 9 */
                         transform: rotate(-45deg);
                     }
 
                     &:after {
-                        -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                        -ms-transform: rotate(45deg); /* IE 9 */
                         transform: rotate(45deg);
                     }
                 }
@@ -156,7 +148,7 @@
     padding-top: 77px;
 
     .site-header {
-        background: #FFF url(../common/img/bg.svg) no-repeat;
+        background: $c-white url("../common/img/bg.svg") no-repeat;
         background-size: cover;
     }
 }
