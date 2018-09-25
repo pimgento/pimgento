@@ -28,10 +28,13 @@ plugins:
 
 versions:
    -
+      name: "2 (API version)"
+      url: /docs/v2.0-api/
+   -
       name: "1"
       url: /docs/v1.0/
    -
-      name: "2"
+      name: "2 (Legacy version)"
       url: /docs/v2.0/
 
 doc_url: /docs/
@@ -39,7 +42,7 @@ doc_url: /docs/
 defaults:
   -
     values:
-      version: "v2.0"
+      version: "v2.0-api"
 
 exclude: ['scss', 'bin', 'node_modules', 'vendor', '.git', '.idea', ]
 
@@ -47,3 +50,4 @@ media_url: "/common/img"
 
 github_pimgento: "https://github.com/Agence-DnD/PIMGento"
 github_pimgento_2: "https://github.com/Agence-DnD/PIMGento-2"
+github_pimgento_2_api: "https://github.com/Agence-DnD/PIMGento-2-API"

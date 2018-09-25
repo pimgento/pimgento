@@ -9,7 +9,7 @@
    - title: "Roadmap"
      href: 'important-stuff/roadmap'
 
-- title: "II. Functionnalities"
+- title: "II. Features"
   items:
    - title: "PIMGento import"
      href: 'functionnalities/pimgento_import'

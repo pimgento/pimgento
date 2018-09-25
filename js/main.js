@@ -51,16 +51,19 @@ function launchTerminal(id, button, importContainer, fileContainer) {
                 var importSelectedDataId = importSelected.attr('data-id');
                 var fileSelectedDataId = fileSelected.attr('data-id');
                 var fileSelectedTitle = fileSelected.attr('data-title');
+                var importSelectedDataTitle = importSelected.attr('data-title');
 
                 var dt = new Date();
                 var time = addZero(dt.getHours()) + ":" + addZero(dt.getMinutes()) + ":" + addZero(dt.getSeconds());
 
-                if (importSelectedDataId === fileSelectedDataId) {
-                    $(id).html("<span data-ty='progress' data-ty data-ty-prompt='>' data-ty-progressChar='.'></span><span data-ty data-ty data-ty-prompt='>'>["+ time +"] You successfully import "+ fileSelectedTitle + "</span>");
-                }
-
-                else {
-                    $(id).html("<span data-ty data-ty data-ty-prompt='>'>["+ time +"] Error ! Please selected the right file.</span>");
+                if (importSelectedDataId === fileSelectedDataId || fileSelectedDataId == null) {
+                    if (fileSelectedDataId == null){
+                        $(id).html("<span data-ty='progress' data-ty data-ty-prompt='>' data-ty-progressChar='.'></span><span data-ty data-ty data-ty-prompt='>'>["+ time +"] You successfully" + " imported "+ importSelectedDataTitle + "</span>");
+                    } else {
+                        $(id).html("<span data-ty='progress' data-ty data-ty-prompt='>' data-ty-progressChar='.'></span><span data-ty data-ty data-ty-prompt='>'>["+ time +"] You successfully" + " imported "+ fileSelectedTitle + "</span>");
+                    }
+                } else {
+                    $(id).html("<span data-ty data-ty data-ty-prompt='>'>["+ time +"] Error ! Please select the right file.</span>");
                 }
 
                 new Termynal(id);

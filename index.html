@@ -1,7 +1,7 @@
 ---
 layout: home
-redirect_from: /docs/v2.0/index.html
-version: v2.0
+redirect_from: /docs/v2.0-api/index.html
+version: v2.0-api
 page_name: home
 ---
 <div class="home">
@@ -12,10 +12,10 @@ page_name: home
                     <h2 data-anijs="if: scroll, on: window, do: fadeInDownBig animated, before: scrollReveal">The easiest and most efficient way to connect your Akeneo with your Magento!</h2>
                     <p data-anijs="if: scroll, on: window, do: fadeInLeftBig animated, before: scrollReveal">PIMGento is the best way to connect your Akeneo Catalog with your Magento Ecommerce: easy to install, to configure and faster than classical methods. Import all your catalog data in a reliable way into your website and increase your business efficiency!</p>
                     <div class="buttons" data-anijs="if: scroll, on: window, do: fadeInLeftBig animated, before: scrollReveal">
-                        <a href="{{ site.github_pimgento_2 }}/archive/master.zip" class="btn primary" target="_blank" rel="external">
+                        <a href="{{ site.github_pimgento_2_api }}/archive/master.zip" class="btn primary" target="_blank" rel="external">
                             <span>Download</span>
                         </a>
-                        <a href="{{ site.github_pimgento_2 }}" class="btn secondary" target="_blank" rel="external">
+                        <a href="{{ site.github_pimgento_2_api }}" class="btn secondary" target="_blank" rel="external">
                             <span>Github</span>
                         </a>
                     </div>
@@ -74,7 +74,7 @@ page_name: home
                         </div>
                         <div class="item-content">
                             <p class="item-title">Manual or automatic</p>
-                            <p>Free to choose! You can either upload and import your CSV files from the Magento back-office or simply let the automatics tasks run different import with CSV files located in a directory of your server.</p>
+                            <p>Free to choose! You can either import from the Magento back-office or simply let the automatics tasks run different import using Akeneo API.</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ page_name: home
                         </div>
                         <div class="item-content">
                             <p class="item-title">Multy-X</p>
-                            <p>PIMGento supports all tpes of Magento structure. If you have multi-website and multi-store with lot of different languages, imports will still work well.</p>
+                            <p>PIMGento supports all types of Magento structure. If you have multi-website and multi-store with lot of different languages, imports will still work well.</p>
                         </div>
                     </div>
                 </div>
@@ -148,31 +148,18 @@ page_name: home
                     <div id="import-type">
                         <p class="subtitle">Select import type</p>
                         <ul>
-                            <li class="type" data-id="1"><span>Categories</span><span class="icon-type"></span></li>
-                            <li class="type active" data-id="2"><span>Families</span><span class="icon-type"></span></li>
-                            <li class="type" data-id="3"><span>Attributes</span><span class="icon-type"></span></li>
-                            <li class="type" data-id="4"><span>Options</span><span class="icon-type"></span></li>
-                            <li class="type" data-id="5"><span>Variants</span><span class="icon-type"></span></li>
-                            <li class="type" data-id="6"><span>Products</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="1" data-title="Categories"><span>Categories</span><span class="icon-type"></span></li>
+                            <li class="type active" data-id="2" data-title="Families"><span>Families</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="3" data-title="Attributes"><span>Attributes</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="4" data-title="Options"><span>Options</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="5" data-title="Variants"><span>Variants</span><span class="icon-type"></span></li>
+                            <li class="type" data-id="6" data-title="Products"><span>Products</span><span class="icon-type"></span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     <div id="pimgento-import" data-termynal data-ty-typeDelay="50">
                         <span data-ty data-ty-prompt=">"></span>
-                    </div>
-                </div>
-                <div class="col-md-3" data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal">
-                    <div id="file-to-import">
-                        <p class="subtitle">Select file to import</p>
-                        <ul>
-                            <li class="type" data-id="1" data-title="categories.csv"><span class="icon-file"></span><span>Categories.csv</span></li>
-                            <li class="type active" data-id="2" data-title="families.csv"><span class="icon-file"></span><span>Families.csv</span></li>
-                            <li class="type" data-id="3" data-title="attributes.csv"><span class="icon-file"></span><span>Attributes.csv</span></li>
-                            <li class="type" data-id="4" data-title="options.csv"><span class="icon-file"></span><span>Options.csv</span></li>
-                            <li class="type" data-id="5" data-title="variants.csv"><span class="icon-file"></span><span>Variants.csv</span></li>
-                            <li class="type" data-id="6" data-title="products.csv"><span class="icon-file"></span><span>Products.csv</span></li>
-                        </ul>
                     </div>
                 </div>
                 <div class="col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -227,7 +214,7 @@ page_name: home
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal">
                     <div class="buttons">
-                        <a class="btn tertiary" href="{{ site.github_pimgento_2 }}/issues" target="_blank" rel="external">
+                        <a class="btn tertiary" href="{{ site.github_pimgento_2_api }}/issues" target="_blank" rel="external">
                             <span>Open new issue</span>
                         </a>
                         <a class="btn quaternary" href="{{ site.baseurl }}{{ site.doc_url }}{{ page.version }}/important-stuff/recurring_questions">
