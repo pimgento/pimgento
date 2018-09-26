@@ -15,6 +15,3 @@ Short-term plans
 Mid-term and long-term plans
 ----------------------------
 * Improve URL rewrite insertion speed
-* Create bundle, packed, virtual and downloadable products
-* Add a feature to delete data
-* Allow the use of Magento 2 API

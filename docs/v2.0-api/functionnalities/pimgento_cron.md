@@ -25,3 +25,13 @@ You can also launch import directly with command line :
 ```bash
 php bin/magento pimgento:import --code=import-type
 ```
+
+With **import-type**:
+
+* category
+* family
+* attribute
+* option
+* product_model
+* family_variant
+* product

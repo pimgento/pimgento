@@ -19,4 +19,4 @@ Magento2
 
 | Magento Version | PIMGento2 (API) Version |
 |-----------------|-------------------------|
-| >= 2.0.x        | master                  |
+| >= 2.1.x        | master                  |

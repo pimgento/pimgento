@@ -29,9 +29,6 @@ php bin/magento cache:flush
 
 ### Install new PIMGento2 (API) Extension :
 ```bash
-composer require php-http/guzzle6-adapter:^1.1
-composer require akeneo/api-php-client-ee:^3.0
-composer require nyholm/psr7:^0.3.0
 composer require agencednd/module-pimgento-api
 
 php bin/magento module:enable Pimgento_Api

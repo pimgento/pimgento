@@ -13,34 +13,13 @@ page_name: documentation
 Install module by Composer as follows:
 
 ```bash
-composer require agencednd/module-pimgento
+composer require agencednd/module-pimgento-api
 ```
 
-Enable and install module(s) in Magento:
+Enable and install module in Magento:
 
 ```bash
-# [Required] Import tools
-php bin/magento module:enable Pimgento_Import
-
-# [Required] Database features
-php bin/magento module:enable Pimgento_Entities
-
-# [Optional] Database logs (System > Pimgento > Log)
-php bin/magento module:enable Pimgento_Log
-
-# [Optional] Activate desired imports
-php bin/magento module:enable Pimgento_Category
-php bin/magento module:enable Pimgento_Family
-php bin/magento module:enable Pimgento_Attribute
-php bin/magento module:enable Pimgento_Option
-php bin/magento module:enable Pimgento_Variant
-php bin/magento module:enable Pimgento_Product
-```
-
-With Akeneo >= 2.0 only:
-
-```bash
-php bin/magento module:enable Pimgento_VariantFamily
+php bin/magento module:enable Pimgento_Api
 ```
 
 Check and update database setup:
