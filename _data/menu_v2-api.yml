@@ -4,6 +4,8 @@
      href: 'important-stuff/how_to'
    - title: "Compatibility"
      href: 'important-stuff/compatibility'
+   - title: "Migration Guide"
+     href: 'important-stuff/migration_guide'
    - title: "Recurring questions"
      href: 'important-stuff/recurring_questions'
    - title: "Roadmap"
@@ -20,13 +22,11 @@
 
 - title: "III. Configuration"
   items:
-   - title: "General"
-     href: 'configuration/general'
-   - title: "Categories"
-     href: 'configuration/categories'
+   - title: "API"
+     href: 'configuration/api'
    - title: "Attributes"
      href: 'configuration/attributes'
+   - title: "Filter Products"
+     href: 'configuration/filter_products'
    - title: "Products"
      href: 'configuration/products'
-   - title: "Images"
-     href: 'configuration/images'
