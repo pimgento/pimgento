@@ -34,7 +34,7 @@ versions:
       name: "1"
       url: /docs/v1.0/
    -
-      name: "2 (Legacy version)"
+      name: "2 (CSV version)"
       url: /docs/v2.0/
 
 doc_url: /docs/
