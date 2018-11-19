@@ -31,11 +31,14 @@ versions:
       name: "2 (API version)"
       url: /docs/v2.0-api/
    -
-      name: "1"
-      url: /docs/v1.0/
+      name: "1 (API version)"
+      url: /docs/v1.0-api/
    -
       name: "2 (CSV version)"
       url: /docs/v2.0/
+   -
+      name: "1 (CSV version)"
+      url: /docs/v1.0/
 
 doc_url: /docs/
 
@@ -51,3 +54,4 @@ media_url: "/common/img"
 github_pimgento: "https://github.com/Agence-DnD/PIMGento"
 github_pimgento_2: "https://github.com/Agence-DnD/PIMGento-2"
 github_pimgento_2_api: "https://github.com/Agence-DnD/PIMGento-2-API"
+github_pimgento_1_api: "https://github.com/Agence-DnD/PIMGento-API"

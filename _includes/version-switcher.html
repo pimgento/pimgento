@@ -1,7 +1,7 @@
 <div class="version-switcher">
     <div class="custom-dropdown-container" data-version="{{ page.version }}">
         <a href="#" id="version-switcher-button" class="btn custom-dropdown">
-            Magento {% if page.version == "v1.0" %}1{% elsif page.version == "v2.0" %}2 (CSV version){% elsif page.version == "v2.0-api" %}2 (API version){% endif %}
+            Magento {% if page.version == "v1.0" %}1 (CSV version){% elsif page.version == "v2.0" %}2 (CSV version){% elsif page.version == "v2.0-api" %}2 (API version){% elsif page.version == "v1.0-api" %}1 (API version){% endif %}
         </a>
 
         <ul class="custom-dropdown-menu">
