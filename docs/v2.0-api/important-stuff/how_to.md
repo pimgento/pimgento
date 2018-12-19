@@ -13,7 +13,7 @@ page_name: documentation
 Install module by Composer as follows:
 
 ```bash
-composer require agencednd/module-pimgento-api
+composer require agencednd/module-pimgento-2-api
 ```
 
 Enable and install module in Magento:
