@@ -15,7 +15,7 @@ Akeneo
 Magento
 --------
 
-* PIMGento (API) is compatible with Magento following this schema :
+* PIMGento (API) is compatible with Magento following this schema:
 
 | Magento Version    | PIMGento (API) Version  |
 |--------------------|-------------------------|

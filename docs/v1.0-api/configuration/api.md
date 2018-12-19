@@ -7,7 +7,7 @@ page_name: documentation
 
 # API
 
-Configuration is available in Magento back-office under :
+Configuration is available in Magento back-office under:
 * System > Configuration > Catalog > Pimgento > API Credentials
 
 | Configuration                 | Usage                                                                                  |

@@ -7,7 +7,7 @@ page_name: documentation
 
 # Attribute options
 
-Configuration is available in Magento back-office under :
+Configuration is available in Magento back-office under:
 * Stores > Catalog > Pimgento > Attribute Option Settings
 
 | Configuration         | Usage                                              |

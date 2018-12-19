@@ -7,7 +7,7 @@ page_name: documentation
 
 # Categories
 
-Configuration is available in Magento back-office under :
+Configuration is available in Magento back-office under:
 * System > Configuration > Catalog > Pimgento > Category Settings
 
 | Configuration                 | Usage                                                                                  |

@@ -21,7 +21,7 @@ You can skip steps, but be careful ! For example, if you want to import attribut
 The media files are imported during the simple product import process.
 You can configure the columns to use in the Magento System > Configuration > Catalog > Pimgento configuration section.
 
-### About the import :
+### About the import:
 
 PIMGento (API) insert all the data into a temporary table. Then data manipulation (mapping,...) is made within this temporary table in SQL. Finally modified content is directly inserted in SQL in Magento tables.
 
