@@ -19,5 +19,5 @@ Magento
 
 | Magento Version    | PIMGento (API) Version  |
 |--------------------|-------------------------|
-| CE >= 1.9.3        | master                  |
-| EE >= 1.14.3       | master                  |
+| CE >= 1.9          | master                  |
+| EE >= 1.14         | master                  |
